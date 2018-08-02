@@ -99,4 +99,8 @@ module.exports = class extends Generator {
     });
     this.npmInstall(['lodash', 'jquery'], { 'save-dev': true });
   }
+
+  end() {
+    this.log('新建目录完成');
+  }
 };
